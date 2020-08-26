@@ -1,0 +1,155 @@
+
+h1,ul,h2 {
+    text-align: center;
+
+}
+ 
+.project-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.PJcontainer a:link {
+    color: rgb(0, 0, 0);
+}
+.PJcontainer a:visited {
+    color: rgb(14, 0, 0);
+}
+ @media (min-width: 1025px) {
+    .project-container {
+    width: 100%;
+        
+}
+
+} 
+@media(min-width: 769px) {
+    .project-container {
+        margin: 0px auto;
+    }
+   
+  
+}
+ 
+
+
+.PJcontainer a{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 15px 15px;
+    border-radius: 8px;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    padding: 10px 15px;
+}
+.PJcontainer a:hover{
+    background: #fa5d5d;
+    box-shadow: 0 0 5px #fa5d5d,
+                0 0 25px #fa5d5d,
+                0 0 50px #fa5d5d,
+                0 0 200px #fa5d5d;
+    color: rgb(238, 235, 235);
+
+}
+.main-header {
+    margin: auto;
+    margin-top: 150px;
+    font-weight: 100;
+    font-size: 2.3em;
+    max-width: 100%;
+    width: 600px;
+   
+}
+.PJu > li, .DLoad >li{
+    display: inline-block;
+    padding: 10px 30px;
+}
+ 
+
+.col {
+    padding: 0 40px;
+}
+
+.PJcontainer {
+    margin-top: 30px;
+    text-align: center;
+}
+.project-container,.alltimes,.finished {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+ 
+ .project-number::after {
+     
+    box-shadow: inset 5px 10px #888888;
+ }
+ 
+.project-number {
+    color: black;
+    
+    margin-left: 30px;
+    margin: 20px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0px 0px 8px #b1afaf; 
+}
+
+.project-names {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.type-project {
+    font-size: 0.9em;
+    text-align: center;
+}
+.des {
+    margin: 10px;
+    border-top: 1px dotted;
+    border-color: var(--border-color);
+    padding-top: 7px;
+    height: 40px;   
+}
+.downloadfile{
+    border-top: 2px dotted rgb(224, 222, 222);
+    padding-top: 15px;
+}
+/* a[href$=".pdf"] {
+    background-image: url('../ImgandGif/pdficon.svg');
+
+}
+a[href$=".word"] {
+    background-image: url('../ImgandGif/wordicon.svg');
+} */
+
+a[href*="download"] {
+    background-repeat: no-repeat;
+    background-size: 18px 35px;
+    padding-left: 40px;
+}
+.DLoad 
+{   
+    margin-top: 20px;
+}
+ 
+.DLoad a{
+    
+    transition: 0.5s;
+    padding: 10px 30px;
+}
+.DLoad a:hover  {
+    letter-spacing: 4px;
+    background: #b026e7;
+    box-shadow: 0 0 5px #b026e7,
+                0 0 25px #b026e7,
+                0 0 50px #b026e7,
+                0 0 200px #b026e7;
+    color: rgb(238, 235, 235);
+     
+}

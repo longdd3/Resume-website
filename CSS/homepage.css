@@ -1,0 +1,273 @@
+ * {
+     box-sizing: border-box;
+ }
+ body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+ 
+ }
+ h1,h2,h3 {
+     margin: 0;
+ }
+
+ a {
+    text-decoration: none;
+}
+img {
+    overflow: hidden;
+}
+ol, ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+a:link {
+    color: #363636;
+}
+a:visited {
+    color: #363636;
+}
+/* This one for Top Nav CSS 
+Please Don't Do anything Stupid with my CSS
+It took alot of time to build and combine them in one. 
+
+Thanks 
+:)
+Have a greate Day
+
+*/
+.header-top {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #94a6c2;
+    
+}
+ 
+ 
+ 
+.LDavatar {
+    margin: auto;
+    width: 45px;
+    height: 45px;
+     
+}
+.avatar-container {
+    background: #d4d9dd;
+    border-radius: 50%;
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #edeff0;
+    border-color: #3e474f;
+    margin-left: 10px;
+}
+.longImage {
+    background: #3e474f;
+    border-color: #3e474f;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: #edeff0;
+    padding: 2px;
+
+}
+.pname {
+    text-align: center;
+}
+.pname {
+    font-size: 1.25em;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+.pname a {
+    font-size: 1.8em;
+    color: white;
+}
+ 
+.nav-show {
+   transition: 0.8 ease-out;
+
+}
+.nav-show a {
+    color: rgb(249, 252, 255);
+    font-size: 1em;
+    transition: box-shadow .3s;
+    margin: auto;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.nav-show li a:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    color: #ffffff;
+    background: rgb(173, 175, 206);
+    transform: scale(1.13);
+}
+ 
+/* This one for Second-Top Nav CSS 
+Not belong to Header elements
+
+
+*/
+ 
+.brandlogo {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(250, 250, 250, 0.05), rgba(148, 147, 147, 0.5)), url('../ImgandGif/backgroundlogo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    padding: 9em 0 5em 0;
+    margin-bottom: 70px;
+    margin-top: 0;
+    text-align: center;
+}
+.logo {
+    margin-top: 50px;
+    
+    width: 280px;
+    transition: transform .3s;
+ 
+}
+.logo-express {
+    margin-top: 20px;
+    font-size: 2.4em;
+    margin: 0.67em 0;
+}
+.tag-line {
+    font-size: 1.4em;
+}
+
+
+
+
+/* This one for Footer Bot  CSS 
+Not belong to Header elements
+
+
+*/
+ 
+
+
+
+.main-footer {
+    text-align: center;
+}
+.main-footer {
+	background: #d9e4ea;
+    padding: 2em 0;
+    margin-top: 30px;
+}
+.header-top {
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  
+    z-index: 1231;
+   }
+.buttonshow {
+    display: none;
+    text-align: center;
+}
+ 
+/* animation click  */
+
+@media (max-width: 765px) {
+    .buttonshow  {
+        display: block;
+        
+    }   
+    .brandlogo {
+        max-width: 100%;
+      
+    }
+    .logo {
+        width: 180px;
+    }
+    .colss {
+        display: none;
+    }
+    .main-nav li{
+        padding-top: 30px;
+    }
+   
+    .checkss {
+        padding-left: 50px;
+        position: absolute;
+        margin-top: 50px;
+    }
+    .checkbtn {
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+        
+    }
+}
+
+@media (min-width: 765px) {
+    .checkss{
+        display: none;
+      
+    }
+    .nav-show {
+        display: block !important;
+    }
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        position: relative;
+    
+    }
+    .checkbtn { 
+        float: right;
+    }
+    .avatar {
+        display: inline-block;
+        position: relative;
+    }
+    .LDavatar {
+        max-width: 1000px;
+    }
+    .top-nav {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1125px;
+        padding-top: 1em;
+    }
+    .footer-inner{
+        width: 100%;
+        margin: 0 auto;
+        }
+   .top-nav li{
+        display: inline-block;
+        margin-left: 30px;
+   }
+   .pname {
+       float:left;
+   }
+   
+   .nav-show {
+       float: right;
+   }
+     
+}
+
+ 
+ 
+ /* clear all the item and space  */
+
+.clearfix::after{
+     content: '';
+     display: table;
+     clear: both;
+ }

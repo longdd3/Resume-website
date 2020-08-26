@@ -1,0 +1,8 @@
+
+input:focus,
+textarea:focus {
+  border-color: #52bab3
+}
+input[type="checkbox"]:checked + label{
+    font-weight:bold;
+  }

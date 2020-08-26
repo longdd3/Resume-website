@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+nav {
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+
+}
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+nav a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px soid transparent;
+    padding: 7px 10px;
+    border-radius:  3px;
+}
+a.active, a:hover {
+    border: 1px solid white;
+    transition: .5s;
+}
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+@media (max-width: 1048px) {
+    label.logo {
+        font-size: 32px;
+        padding-left: 60px
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px) {
+    nav #icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active,a:hover {
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show {
+        left: 0;
+        
+    }
+}
+ 
+.box {
+    width: 250px;
+    height: 400px;
+    color: red;
+    background:lightblue;
+    position: relative;
+}
+#topss {
+    position: absolute;
+    top: 400px;
+    background:white;
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+  }
+.listss {
+    text-align: center;
+}
+ul li {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+.alltimes , .finished {
+    display: block;
+}
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 15px 15px;
+    border-radius: 8px;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    padding: 10px 30px;
+}
+ 
+button:hover {
+    background: #fa5d5d;
+    box-shadow: 0 0 5px #fa5d5d,
+                0 0 25px #fa5d5d,
+                0 0 50px #fa5d5d,
+                0 0 200px #fa5d5d;
+    color: rgb(238, 235, 235);
+}
